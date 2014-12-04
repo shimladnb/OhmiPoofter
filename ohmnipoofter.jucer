@@ -5,6 +5,12 @@
               jucerVersion="3.1.0">
   <MAINGROUP id="hfl9jE" name="ohmnipoofter">
     <GROUP id="{E4E09031-E495-E577-FBE7-A526CA29136F}" name="Source">
+      <FILE id="sKfigp" name="GUIcomponent.cpp" compile="1" resource="0"
+            file="Source/GUIcomponent.cpp"/>
+      <FILE id="frzvZ6" name="GUIcomponent.h" compile="0" resource="0" file="Source/GUIcomponent.h"/>
+      <FILE id="OlqtrI" name="AudioCallback.cpp" compile="1" resource="0"
+            file="Source/AudioCallback.cpp"/>
+      <FILE id="oCfP7L" name="AudioCallback.h" compile="0" resource="0" file="Source/AudioCallback.h"/>
       <FILE id="WKq0v6" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
       <FILE id="ZKUVlN" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>

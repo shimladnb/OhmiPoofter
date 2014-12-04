@@ -11,7 +11,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "AudioCallback.h"
-
+#include "GUIcomponent.h"
 
 //==============================================================================
 /*
@@ -32,7 +32,8 @@ public:
 private:
     
     //==============================================================================
-        float currentSample;
+        GUIcomponent custom;
+    float currentSample;
          void audioCallback (float** buffer, int channels, int frames) override;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

@@ -13,6 +13,8 @@
 //==============================================================================
 MainContentComponent::MainContentComponent()
 {
+    addAndMakeVisible (&custom);
+    setSize (custom.getWidth(), custom.getHeight());
     setSize (600, 400);
     startAudioCallback();
 }

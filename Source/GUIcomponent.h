@@ -34,7 +34,8 @@
     Describe your class and how it works here!
                                                                     //[/Comments]
 */
-class GUIcomponent  : public Component
+class GUIcomponent  : public Component,
+                      public SliderListener
 {
 public:
     //==============================================================================
@@ -47,6 +48,7 @@ public:
 
     void paint (Graphics& g);
     void resized();
+    void sliderValueChanged (Slider* sliderThatWasMoved);
 
 
 
@@ -55,6 +57,9 @@ private:
     //[/UserVariables]
 
     //==============================================================================
+    ScopedPointer<Slider> slider;
+    ScopedPointer<Slider> slider2;
+    ScopedPointer<Slider> slider3;
 
 
     //==============================================================================
