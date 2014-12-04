@@ -19,7 +19,7 @@
 		5A536F00D75EE550EEB99E8F /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236FD5C1A4CE3A73F124AAB9 /* CoreMIDI.framework */; };
 		5AF39187C6C847704E14E9F9 /* juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E6D2BD43ED9E4372ABF38 /* juce_gui_basics.mm */; };
 		62CDD9CF0BA71A3622444B40 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C5AF72C06BE0680C75CCE0 /* Main.cpp */; };
-		64E754A41A30CDED00F61653 /* AudioCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E754A31A30CDED00F61653 /* AudioCallback.cpp */; };
+		64E754A71A30D2E900F61653 /* AudioCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E754A61A30D2E900F61653 /* AudioCallback.cpp */; };
 		6F04D91EC2E8BA21F5A09CB9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D342867BA9F9F21E7F0B43 /* Carbon.framework */; };
 		7B7BDD8484AC06647E08C09F /* juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96C1F6C6E1364AAECFF02EDC /* juce_events.mm */; };
 		7BC980E608FB492BB3BFEC46 /* juce_cryptography.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97DF6A6FE04C95BF70E74CBB /* juce_cryptography.mm */; };
@@ -388,8 +388,8 @@
 		6352ED2B8D56B3D6FE043810 /* juce_Socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_Socket.h; path = "../../../../../Downloads/JUCE-OSX/modules/juce_core/network/juce_Socket.h"; sourceTree = SOURCE_ROOT; };
 		645A5227D6D0F99D7EAC16F7 /* juce_ImageFileFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_ImageFileFormat.h; path = "../../../../../Downloads/JUCE-OSX/modules/juce_graphics/images/juce_ImageFileFormat.h"; sourceTree = SOURCE_ROOT; };
 		64E3388AED4DDC994F188242 /* juce_Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_Label.h; path = "../../../../../Downloads/JUCE-OSX/modules/juce_gui_basics/widgets/juce_Label.h"; sourceTree = SOURCE_ROOT; };
-		64E754A21A30CDED00F61653 /* AudioCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioCallback.h; path = ../../../intropoofter/AudioCallback_JUCE/AudioCallback.h; sourceTree = "<group>"; };
-		64E754A31A30CDED00F61653 /* AudioCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioCallback.cpp; path = ../../../intropoofter/AudioCallback_JUCE/AudioCallback.cpp; sourceTree = "<group>"; };
+		64E754A51A30D2E900F61653 /* AudioCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioCallback.h; path = ../../Source/AudioCallback.h; sourceTree = "<group>"; };
+		64E754A61A30D2E900F61653 /* AudioCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioCallback.cpp; path = ../../Source/AudioCallback.cpp; sourceTree = "<group>"; };
 		65CCB83992AB266B5080B73C /* juce_Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_Expression.h; path = "../../../../../Downloads/JUCE-OSX/modules/juce_core/maths/juce_Expression.h"; sourceTree = SOURCE_ROOT; };
 		65E2C90EE9FF79501D645573 /* juce_ConcertinaPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_ConcertinaPanel.cpp; path = "../../../../../Downloads/JUCE-OSX/modules/juce_gui_basics/layout/juce_ConcertinaPanel.cpp"; sourceTree = SOURCE_ROOT; };
 		66155C95D435C6F997F4E2EF /* juce_CPlusPlusCodeTokeniser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_CPlusPlusCodeTokeniser.h; path = "../../../../../Downloads/JUCE-OSX/modules/juce_gui_extra/code_editor/juce_CPlusPlusCodeTokeniser.h"; sourceTree = SOURCE_ROOT; };
@@ -1600,10 +1600,10 @@
 			isa = PBXGroup;
 			children = (
 				E2AFAA5C19C5348863F3D2C2 /* MainComponent.cpp */,
+				64E754A51A30D2E900F61653 /* AudioCallback.h */,
+				64E754A61A30D2E900F61653 /* AudioCallback.cpp */,
 				D0C5F75EB5496356C0347988 /* MainComponent.h */,
 				11C5AF72C06BE0680C75CCE0 /* Main.cpp */,
-				64E754A21A30CDED00F61653 /* AudioCallback.h */,
-				64E754A31A30CDED00F61653 /* AudioCallback.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -2709,7 +2709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23730980460DDADA8720044E /* MainComponent.cpp in Sources */,
-				64E754A41A30CDED00F61653 /* AudioCallback.cpp in Sources */,
+				64E754A71A30D2E900F61653 /* AudioCallback.cpp in Sources */,
 				62CDD9CF0BA71A3622444B40 /* Main.cpp in Sources */,
 				ED302965BB53AA2239AC9F5D /* juce_audio_basics.mm in Sources */,
 				CDB02A77CC7A88D6E8E12DC6 /* juce_audio_devices.mm in Sources */,

@@ -7,6 +7,7 @@
 */
 
 #include "MainComponent.h"
+#include <math.h>
 
 
 //==============================================================================
@@ -41,7 +42,7 @@ void MainContentComponent::audioCallback(float** buffer, int channels, int frame
 {
     for (int ch=0; ch < channels; ch++) {
         for (int fr = 0; fr < frames; fr++) {
-            buffer[ch][fr] = tanh(buffer[ch][fr]);
+           // buffer[ch][fr] = pow(buffer[ch],3);
             //float poep = previous
             currentSample = buffer [ch][fr];
             //filteruitrekenen
