@@ -46,7 +46,11 @@ void MainContentComponent::audioCallback(float** buffer, int channels, int frame
         for (int fr = 0; fr < frames; fr++) {
            // buffer[ch][fr] = pow(buffer[ch],3);
             //float poep = previous
+            
+            
             currentSample = buffer [ch][fr];
+            currentSample = tanhf(currentSample);
+            
             //filteruitrekenen
             
             //geschiedenis opslaan
