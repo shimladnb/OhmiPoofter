@@ -48,8 +48,10 @@ void MainContentComponent::audioCallback(float** buffer, int channels, int frame
             //float poep = previous
             
             
+            
             currentSample = buffer [ch][fr];
             currentSample = tanhf(currentSample);
+           
             
             //filteruitrekenen
             
